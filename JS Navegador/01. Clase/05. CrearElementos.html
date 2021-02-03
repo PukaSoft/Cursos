@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titulo <em>Crear elementos</em></h1>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </ul>
+
+    <div>
+
+    </div>
+
+    <script>
+        const title = document.querySelector('h1');
+        const contenedor = document.querySelector('div')
+        title.style.color = 'green';
+        const profesor = document.createElement('h2');
+        profesor.textContent = 'Juan Sanchez';
+        profesor.id = 'teacher';
+        profesor.classList.add('profesor','bien');
+        contenedor.appendChild(profesor)
+        console.log(contenedor);
+
+    </script>
+</body>
+</html>

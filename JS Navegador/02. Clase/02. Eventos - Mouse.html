@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" >Los eventos - Mouse</h1>
+    <h2 id="title2" >Los eventos - Mouse2</h2>
+    <h2 id="title3" >Los eventos - Mouse3</h2>
+    <h2 id="title4" >Los eventos - Mouse4</h2>
+
+    <p id="noContextMenu">The context menu has been disabled on this paragraph.</p>
+<p>But it has not been disabled on this one.</p>
+
+
+    
+     <button>Mostrar</button>
+
+    <script>
+     const title = document.getElementById('title')
+     const title2 = document.getElementById('title2')
+     const title3 = document.getElementById('title3')
+     const title4 = document.getElementById('title4')
+
+     noContext = document.getElementById('noContextMenu');
+     const hola = e => alert(e.target.textContent);
+
+    noContext.addEventListener('contextmenu', e => {
+    alert(e)
+    });
+
+
+     
+    // title.addEventListener('mouseenter',e =>{
+    //     hola(e)
+    // })
+
+    // title2.addEventListener('dblclick',e =>{
+    //     hola(e)
+    // })
+
+    // title3.addEventListener('mouseleave',e =>{
+    //     hola(e)
+    // })
+
+    title4.addEventListener('contextmenu',e   =>{
+        hola(e)
+        console.log(e)
+    })
+
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titulo H1</h1>
+    <ul id="listar">
+        <li id="item-1">item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li id="item-5">item-5</li>
+    </ul>
+
+    <script>
+
+        const title = document.querySelector('h1');
+        if (title) {
+            title.style.background = 'yellow'
+        }
+        title.id = 'titulos'
+        title.setAttribute('class','mi-titulo')
+        title.classList.add('main-title', 'otro-title')
+        console.log(title);
+    </script>
+</body>
+</html>

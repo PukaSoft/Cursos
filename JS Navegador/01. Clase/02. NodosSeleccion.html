@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        <li id="item-1">Item-1</li>
+        <li id="item-2">Item-2</li>
+        <li id="item-3">Item-3</li>
+    </ul>
+
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dolorem, ad quaerat fuga dicta officiis.</p>
+
+    <script>
+        const item = document.getElementById("item-1");
+        const item2 = document.querySelector('#item-2');
+        const p = document.querySelector(".parrafo");
+        const items = document.querySelectorAll("ul");
+
+        const lista = document.getElementById("lista")
+        
+        item.style.color = 'green';
+        item.style.fontSize = '50px';
+        p.style.color = "red";
+
+        // console.log(lista.querySelector("li:last-child"));
+       
+        let nodeList = document.querySelectorAll("li");
+        // const elementList = document.getElementsByTagName("li");
+
+        let arr = [...document.querySelectorAll("li")] 
+        let arr2 = Array.from(document.querySelectorAll("li"))
+
+        let arr3 = arr2.map(el => {
+            
+        if(el.textContent.trim().toUpperCase() === 'ITEM-1'){    
+            el.style.background = 'black'
+        }
+        })
+
+        for(let el of  nodeList) {
+            if(el.textContent.trim().toUpperCase() === 'ITEM-3'){    
+            el.style.background = 'pink'
+        }
+        }
+
+        console.log(arr2);
+        // console.log(elementList);
+
+
+    </script>
+</body>
+</html>

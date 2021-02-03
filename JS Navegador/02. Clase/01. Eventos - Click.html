@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" >Los eventos</h1>
+    
+     <button>Mostrar</button>
+
+    <script>
+     const title = document.getElementById('title')
+     const hola = e => alert(e.target.textContent);
+     
+    title.addEventListener('click',e =>{
+        hola(e)
+    })
+
+         document.querySelector('button')
+         .addEventListener('click',e=>{
+            hola(e)
+         })
+
+    </script>
+
+</body>
+</html>
