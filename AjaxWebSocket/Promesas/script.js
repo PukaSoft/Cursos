@@ -1,9 +1,12 @@
-const myContent = document.querySelector("#myContent");
+const myContent = document.getElementById("myContent");
 const btn = document.getElementById("btn");
+
 
 const setText = (data) => {
   myContent.textContent = data;
 };
+
+
 
 const getData = () => {
   return new Promise((resolve, reject) => {
